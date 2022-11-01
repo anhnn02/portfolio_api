@@ -7,25 +7,21 @@ const projectSchema = new Schema({
         minLength: 5,
         required: true,
     },
-    regularPrice: {
+    image: {
         type: String,
         required: true,
     },
-    salePrice: {
+    description: {
         type: String,
     },
-    img: {
-        type: String,
-        required: true,
-    },
-    desc: {
+    descShort: {
         type: String,
     },
-    size: {
+    link: {
         type: Array,
         required: true,
     },
-    category: {
+    tech: {
         type: ObjectId,
         ref: 'Category'
     }
